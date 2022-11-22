@@ -1,0 +1,105 @@
+<html>
+<title>Blood Bank</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        function validate()
+        {
+            if(document.getElementById("t1").value==""){
+            alert("Please provide proper suggestion.");
+            document.getElementById("t1").focus();
+            return false;
+            }
+        return (true);
+        }
+    </script>
+</head>
+
+<body class="body" link="white" link="white" alink="orange">
+
+    <form action="">
+        <fieldset class="field">
+            <p class="Donor-Login"><img src="3.jpg" align="left" height="100" width="100">&nbsp;&nbsp; BloodBank.com <br><br>&nbsp;&nbsp;&nbsp;A Social Intiative</p>
+            <p class="Donor-Login" align="right">Donor Login : <input class="Donor-text" type="text" name="Donor"
+                    placeholder="Donor"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password : <input class="Password-text" type="text" name="Password"
+                    placeholder="Password">
+                <input class="Login_btn" type="submit" name="Login" value="Login">
+            </p>
+        </fieldset>
+    </form method="POST">
+    <p>
+    <div class="grid-container">
+        <div class="item1"><a href="Donar Registration.html" / target="_blank" rel="external">Register</a></div>
+        <div class="item2"><a href="why to donate blood.html" / target="_blank" rel="external">Why Donate Blood</a></div>
+        <div class="item3"><a href="blood donation.html" / target="_blank" rel="external">blood donation</a></div>
+        <div class="item4"><a href="Refer a Friend.html" / target="_blank" rel="external">Refer A Friend</a></div>
+        <div class="item5"><a href="Input Element.html" / target="_blank" rel="external">Contact Us</a></div>
+
+
+        <div class="item6">
+            <p class="p6">Find A Donor</p>
+            <form method="POST">
+                <label for="State">State : </label>
+                <select class="drop-down" name="State">
+                    <option value="State">Maharastra</option>
+                    <option value="State">Punjab</option>
+                    <option value="State">Assam</option>
+                </select>
+                <br /><br />
+                <label for="City">City&nbsp; :&nbsp; </label>
+                <select class="drop-down" name="City">
+                    <option value="City">Mumbai</option>
+                    <option value="City">Amritsar</option>
+                    <option value="City">Guwahati</option>
+                </select>
+                <br /><br />
+                <label for="Area">Area : </label>
+                <select class="drop-down" name="Area">
+                    <option value="Area">1</option>
+                    <option value="Area">2</option>
+                    <option value="Area">3</option>
+                </select>
+                <br /><br />
+                <label for="Type">Type : </label>
+                <select class="drop-down" name="Type">
+                    <option value="Type">AB ve-</option>
+                    <option value="Type">O ve-</option>
+                    <option value="Type">B ve-</option>
+                </select>
+                <br><br>
+                <input class="search-btn2" type="submit" name="Search" value="Search">
+            </form>
+        </div>
+
+
+        <div class="item7"><iframe width="600" height="300" a src="https://www.youtube.com/embed/ezafVzfJw60?autoplay=1&mute=0" allowfullscreen></iframe></div>
+
+
+        <div class="item8">
+            Blood Donation Process<br><br>
+            <center><iframe width="600" height="300" src="https://www.youtube.com/embed/Tfwq_vJHwT8?autoplay=1&mute=1" allowfullscreen></iframe></center>
+        </div>
+
+
+        <div class="item9">Where would you like to donate?
+            <form>
+                <br>
+                <input id="t1" class="search-box" type="Search" name="Search" placeholder="Search">
+                <input class="search-btn" type="Submit" name="Search" value="Search">
+            </form>
+        </div>
+        <div class="item10">
+	    <form method="GET" onsubmit="return(validate())">
+            <p>Any Suggestions?</p>
+
+            <textarea id="t1" placeholder="Feedback..." rows="6" cols="70"></textarea><br><br>
+            <input class="feedback-btn" type="Submit" name="Submit>" value="Submit">
+            
+        </form>
+	</div>
+    </div>
+</body>
+
+</html>
